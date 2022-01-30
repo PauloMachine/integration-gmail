@@ -28,6 +28,6 @@ def get_last_email():
   for part in email_message.walk():
     if part.get_content_type() == "text/plain":
       body = part.get_payload(decode=True)
-      message['body'] = body.decode().replace("\r\n", "").split()
+      message['body'] = body.decode().replace("\r\n", "")
 
   return message
