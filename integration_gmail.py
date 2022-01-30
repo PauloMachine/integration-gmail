@@ -1,6 +1,5 @@
 import imaplib
 import email
-import time
 
 from robot.api.deco import keyword
 
